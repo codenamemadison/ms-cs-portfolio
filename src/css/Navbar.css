@@ -1,0 +1,119 @@
+
+/* NAVBAR */
+/* #hamburger-outer {
+    position: absolute;
+} */
+
+nav {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.hamburger-menu {
+    font-size: 4rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* color: white; */
+    position: fixed;
+    right: 2rem;
+    width: 40px;     
+    height: 36px;
+}
+
+.hamburger-menu.open {
+    color: var(--color-main);
+    z-index: 1200;
+    right: 2rem;
+}
+.bar {
+    height: 6px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-menu.open .bar {
+    background-color: var(--color-main)
+}
+
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -40vw; /* hidden by default */
+    width: 30vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    z-index: 900;
+    /* font-size: 2em; */
+}
+
+.side-menu.open {
+    right: 0;
+}
+  
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+    /* display: flex; */
+    gap: 1rem;
+    color: var(--color-main);
+    
+}
+  
+li {
+    padding: 1rem;
+    /* background-color: red; */
+}
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav a:link{
+    color: var(--color-main);
+}
+
+nav a:visited{
+    color: var(--color-main);
+}
+
+nav a:hover{
+    color: var(--color-main-red);
+}
+
+nav a:active{
+    color: var(--color-main);
+}

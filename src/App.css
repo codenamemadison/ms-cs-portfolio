@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* background-color: blue; */
+  font-family: 'Questrial', sans-serif;
+}
+
+:root {
+  --color-main: #1E1436;
+  --color-main-blue: #6696FF;
+  --color-main-yellow: #FFC03A;
+  --color-main-red: #DB0000;
+  --color-main-green: #13AE30;
+  --color-main-pink: #E54DE8;
+  /* --shape-size-value: 175px; */
+  --shape-size-value: 22vh;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,8 +36,50 @@
   color: #61dafb;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.pentagon {
+  background-color: var(--color-main-blue);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  height: var(--shape-size-value);
+  width: var(--shape-size-value);
+
+}
+
+.star {
+  background-color: var(--color-main-yellow);
+  height: var(--shape-size-value);
+  width: var(--shape-size-value);
+  clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+}
+
+.square {
+  background-color: var(--color-main-red);
+  height: calc(var(--shape-size-value) - 2vh);
+  width: calc(var(--shape-size-value) - 2vh);
+}
+
+.circle {
+  background-color: var(--color-main-green);
+  height: var(--shape-size-value);
+  width: var(--shape-size-value);
+  border-radius: 50%;
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: calc(var(--shape-size-value)/2) solid transparent;  
+  border-right: calc(var(--shape-size-value)/2) solid transparent; 
+  border-bottom: calc(var(--shape-size-value) - 2vh) solid var(--color-main-pink); 
 }
