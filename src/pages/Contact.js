@@ -78,6 +78,13 @@ export default function Contact() {
                 <p>Thank you for submitting!</p>
                 </div>
             {/* )} */}
+            <form name="contact" method="POST" data-netlify="true" hidden>
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="text" name="name" />
+                <input type="email" name="email" />
+                <input type="text" name="subject" />
+                <textarea name="message"></textarea>
+            </form>
         </div>
     );
 }
