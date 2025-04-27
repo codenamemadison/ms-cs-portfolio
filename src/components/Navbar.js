@@ -27,7 +27,7 @@ export default function Navbar() {
                         <li><Link to="/" onClick={() => setIsOpen(false)}>HOME</Link></li>
                         {/* <li><Link to="/about">About</Link></li> */}
                         <li><Link to="/projects" onClick={() => setIsOpen(false)}>PROJECTS</Link></li>
-                        <li><Link to="/projects" onClick={() => setIsOpen(false)}>EXPERIENCE</Link></li>
+                        <li><Link to="/experience" onClick={() => setIsOpen(false)}>EXPERIENCE</Link></li>
                         <li><Link to="/contact" onClick={() => setIsOpen(false)}>CONTACT</Link></li>
                     </ul>
                 </div>
