@@ -136,8 +136,8 @@ section {
 }
 
 #main-section h1 {
-   min-width:50%;
-   max-width:75%;
+   min-width:90%;
+   max-width:80%; /* TODO: RESOLVE LATER? */
 }
 /* #main-section p {
     
@@ -202,15 +202,17 @@ section {
 
 
 /******* STACK SECTION *******/
-
-#stack-section {
+/* TODO: RESOLVE ISSUE WHERE SCROLLING TO BOTTOM PUSHES SCROLL UPWARD */
+#stack-section { 
     /* background-color: red; */
-    padding-left: 4rem;
-    padding-right: 2rem;
+    /* padding-left: 4rem;
+    padding-right: 2rem; */
     display: flex;
     position: relative;
     flex-direction: column;
     height: auto;
+    margin-top: 10rem;
+    padding-top: 2rem;
     padding-bottom: 50rem;
 }
 
@@ -223,7 +225,7 @@ section {
     align-items: center;
     /* width: auto; */
     /* padding-top: 3rem; */
-    padding: 2rem;
+    /* padding: 2rem; */
     padding-top: 4rem;
     /* position: absolute;
     bottom: 5rem; */
@@ -241,7 +243,9 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 .stackOdd {
@@ -250,12 +254,17 @@ section {
 
 .stackEven {
     justify-content: flex-end;
+    /* background-color: blue; */
 }
 
 .shape-container {
     /* background-color: blue; */
     height: 100%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -283,7 +292,7 @@ section {
 
 .stack .square {
     transform: rotate(25deg);
-    margin-top: 0vh;
+    margin-top: 1vh;
     margin-left: 0vh;
 }
 
@@ -307,7 +316,6 @@ section {
 
 /* #frontend-container {
     background-color: gray;
-    
 }
 
 #backend-container {
@@ -326,9 +334,73 @@ section {
     background-color: gray;
 } */
 
+#frontend-container h3 {
+    /* background-color: gray; */
+    color: var(--color-main-yellow)
+}
+
+#backend-container h3 {
+    /* background-color: black; */
+    color: var(--color-main-green)
+}
+
+#database-container h3 {
+    /* background-color: gray; */
+    color: var(--color-main-pink)
+}
+
+
+#tools-container h3 {
+    /* background-color: gray; */
+    color: var(--color-main-red);
+} 
+
+#tools-container .stack-list {
+    justify-content: flex-end;
+
+}
+
+#design-container h3 {
+    /* background-color: black; */
+    color: var(--color-main-blue);
+    white-space: nowrap;
+}
+
 
 .last-section {
+    margin-top: 5rem;
     height: auto;
     min-height: 100vh;
     scroll-snap-align: start;
 }
+
+.stack-list {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    /* background-color: purple; */
+}
+
+
+.logo-and-text-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.stack-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.logo-text {
+    color: white;
+    font-size: 1.5rem;
+}
+
