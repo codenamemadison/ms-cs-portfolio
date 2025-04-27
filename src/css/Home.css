@@ -9,7 +9,7 @@
     padding: .01rem; /* TODO: RESOLVE LATER */
     width: 100%;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     /* scroll-snap-type: y proximity; */
     scroll-behavior: smooth;
 }
@@ -107,8 +107,8 @@ section {
     display: flex;
     position: relative;
     /* flex-direction: row;
-    justify-content: space-between; */
-    /* align-items: flex-end; */
+    justify-content: space-between;
+    align-items: flex-end; */
 }
 
 #main-section .content-container {
@@ -213,7 +213,7 @@ section {
     height: auto;
     margin-top: 10rem;
     padding-top: 2rem;
-    padding-bottom: 50rem;
+    padding-bottom: 10rem;
 }
 
 
