@@ -9,7 +9,7 @@ export default function Contact() {
         subject: '',
         message: '',
     }); 
-    const [showConfirmationMessage, setShowConfirmationmessage] = useState(false)
+    // const [showConfirmationMessage, setShowConfirmationmessage] = useState(false)
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -21,14 +21,14 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         // e.preventDefault();
-        setShowConfirmationmessage(true);
+        // setShowConfirmationmessage(true);
         console.log("Form has been submitted");
     }
     return (
         <div id="contact-bg">
             <h1>Contact Page</h1>
 
-            {!showConfirmationMessage ? (
+            {/* {!showConfirmationMessage ? ( */}
             <form id="contact-form" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <p>Want to network, contact about opportunities, or interested in hiring?</p>
@@ -73,11 +73,11 @@ export default function Contact() {
                 </div>
                 <button type="submit">Send</button>
             </form>
-            ) : (
+            {/* ) : ( */}
                 <div className="confirmation-message">
                 <p>Thank you for submitting!</p>
                 </div>
-            )}
+            {/* )} */}
         </div>
     );
 }
