@@ -29,9 +29,8 @@ export default function Contact() {
             <h1>Contact Page</h1>
 
             {/* {!showConfirmationMessage ? ( */}
-            <form id="contact-form" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
+            <form id="contact-form" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true" action="/contact-confirmation" >
                 <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="redirect" value="/contact-confirmation" />
                 <p>Want to network, contact about opportunities, or interested in hiring?</p>
                 <p>Fill out the contact form below:</p>
                 <div className="fields-container">
