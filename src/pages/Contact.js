@@ -29,7 +29,7 @@ export default function Contact() {
             <h1>Contact Page</h1>
 
             {/* {!showConfirmationMessage ? ( */}
-            <form id="contact-form" onSubmit={handleSubmit} name="contact" method="POST" netlify>
+            <form id="contact-form" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <p>Want to network, contact about opportunities, or interested in hiring?</p>
                 <p>Fill out the contact form below:</p>
@@ -74,17 +74,10 @@ export default function Contact() {
                 <button type="submit">Send</button>
             </form>
             {/* ) : ( */}
-                <div className="confirmation-message">
+                {/* <div className="confirmation-message">
                 <p>Thank you for submitting!</p>
-                </div>
+                </div> */}
             {/* )} */}
-            {/* <form name="contact" method="POST" data-netlify="true" hidden>
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="text" name="name" />
-                <input type="email" name="email" />
-                <input type="text" name="subject" />
-                <textarea name="message"></textarea>
-            </form> */}
         </div>
     );
 }
