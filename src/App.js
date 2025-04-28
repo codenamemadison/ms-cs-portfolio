@@ -7,7 +7,7 @@ import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar'; // optional for navigation
-
+import ContactConfirmation from "./pages/ContactConfirmation";
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Route path="/experience" element={<Experience/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/contact-confirmation" element={<ContactConfirmation/>}/>
       </Routes>
     </Router>
     </>

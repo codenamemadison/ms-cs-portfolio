@@ -25,12 +25,13 @@ export default function Contact() {
         console.log("Form has been submitted");
     }
     return (
-        <div id="contact-bg">
+        <div className="contact-bg">
             <h1>Contact Page</h1>
 
             {/* {!showConfirmationMessage ? ( */}
             <form id="contact-form" onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="redirect" value="/contact-confirmation" />
                 <p>Want to network, contact about opportunities, or interested in hiring?</p>
                 <p>Fill out the contact form below:</p>
                 <div className="fields-container">
@@ -73,11 +74,6 @@ export default function Contact() {
                 </div>
                 <button type="submit">Send</button>
             </form>
-            {/* ) : ( */}
-                {/* <div className="confirmation-message">
-                <p>Thank you for submitting!</p>
-                </div> */}
-            {/* )} */}
         </div>
     );
 }
