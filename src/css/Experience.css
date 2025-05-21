@@ -13,3 +13,117 @@
     */
     
 }
+h1 {
+    text-align: center;
+}
+
+
+.experience-item-rows {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
+    /* padding-left: 10vw; */
+    gap: 1.5em;
+    padding-top: 1em;
+}
+
+.experience-item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+/* --------- SHAPES STYLING --------- */
+.shape-and-line {
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.line {
+    background-color: white;
+    width: .2em;
+    height: 110%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.75;
+}
+.shape {
+     z-index: 11;
+}
+.pentagon {
+    transform: rotate(-20deg);
+    margin-top: 0vh;
+    margin-left: 0vh;
+}
+
+
+.star {
+    transform: rotate(10deg);
+    margin-top: 0vh;
+    margin-left: 0vh;
+}
+
+.square {
+    transform: rotate(-25deg);
+    margin-top: 5vh;
+    margin-left:0vh;
+}
+
+.circle {
+    transform: rotate(0deg);
+    margin-top: 0vh;
+    margin-left: 0vh;
+}
+
+.triangle {
+    transform: rotate(20deg);
+    margin-top: 0vh;
+    margin-left: 0vh;
+}
+
+/* --------- EXPERIENCE ITEM STYLING --------- */
+.experience-item {
+    background-color: var(--color-off-main);
+    width: 60vw;
+    padding: 5vh 9vh 5vh 9vh;
+    border-radius: 3em;
+}
+
+.experience-item h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.experience-item h2 {
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: .25em;
+}
+
+.experience-item ul {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 1em;
+}
+
+.experience-item ul li {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    margin-bottom: .25em;
+}
+
+.experience-item p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
