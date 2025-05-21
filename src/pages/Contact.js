@@ -76,3 +76,4 @@ export default function Contact() {
         </div>
     );
 }
+// TODO: FIX ISSUE WITH WHERE SUBMIT BUTTON REDIRECTS USER 
