@@ -6,7 +6,7 @@ export default function Experience() {
     const shapes = ["pentagon", "star", "square","circle", "triangle"]
     console.log(experienceData)
     return (
-        <div id="home-bg">
+        <div id="experience-bg">
             <h1>Experience Page</h1>
             <div className="experience-item-rows">
             {experienceData.map((item, index) => (

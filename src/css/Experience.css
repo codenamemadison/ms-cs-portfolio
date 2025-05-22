@@ -1,4 +1,4 @@
-#home-bg {
+#experience-bg {
     background-color: var(--color-main);
     /*
     height: 100vh;
@@ -11,10 +11,16 @@
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
     */
-    
+}
+
+body {
+    background-color: var(--color-main);
 }
 h1 {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
 }
 
 
@@ -36,6 +42,7 @@ h1 {
     justify-content: center;
     align-items: stretch;
 }
+
 /* --------- SHAPES STYLING --------- */
 .shape-and-line {
     margin-right: 2em;
@@ -53,9 +60,12 @@ h1 {
     z-index: 10;
     opacity: 0.75;
 }
+
 .shape {
-     z-index: 11;
+    z-index: 11;
+    scale: 75%;
 }
+
 .pentagon {
     transform: rotate(-20deg);
     margin-top: 0vh;
@@ -64,7 +74,7 @@ h1 {
 
 
 .star {
-    transform: rotate(10deg);
+    transform: rotate(15deg);
     margin-top: 0vh;
     margin-left: 0vh;
 }
@@ -90,7 +100,7 @@ h1 {
 /* --------- EXPERIENCE ITEM STYLING --------- */
 .experience-item {
     background-color: var(--color-off-main);
-    width: 60vw;
+    width: 55vw;
     padding: 5vh 9vh 5vh 9vh;
     border-radius: 3em;
 }
@@ -98,6 +108,7 @@ h1 {
 .experience-item h3 {
     font-weight: 400;
     font-size: 1.5em;
+    color: rgb(185, 178, 226);
 }
 
 .experience-item h2 {
@@ -120,10 +131,12 @@ h1 {
     padding: 0;
     font-size: 1.1em;
     margin-bottom: .25em;
+    font-weight: 200;
 }
 
 .experience-item p {
     margin: 0;
     padding: 0;
     font-size: 1.1em;
+    color: rgb(185, 178, 226);
 }
