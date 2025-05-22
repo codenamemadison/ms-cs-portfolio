@@ -8,37 +8,56 @@ export default function Home() {
     const imagesImported = importAll(
         require.context('../assets/logos/', true, /\.(png|jpe?g|svg)$/)
     );
+    const socialsImported = importAll(
+        require.context('../assets/socials/', false, /\.(png|jpe?g|svg)$/)
+    );
     console.log("Available images:", Object.keys(imagesImported));
     return (
         <div id="home-bg">
             <section id="main-section">
-                <div class="content-container">
-                    <div class="text-group">
+                <div className="content-container">
+                    <div className="text-group">
                         <h1> Hi, my name is Madison Shimbo </h1>
                         <p> 
                             I’m a Front-end Engineer, UX/UI Designer, and an artist.
                             I have 2 years of experience in Software Engineering and specialize in mobile engineering. 
                         </p>
+                        <div className="socials-container">
+                            <a 
+                                href="https://github.com/codenamemadison" 
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                className="social-link">
+                                <img src={socialsImported["github-logo-white.png"]} alt="github-logo" id="github-logo"></img>
+                            </a>
+                            <a 
+                                href="https://www.linkedin.com/in/madisonshimbo/" 
+                                target="_blank"
+                                rel="noopener noreferrer" 
+                                className="social-link">
+                                <img src={socialsImported["linkedin-logo.svg"]} alt="linkedin-logo" id="linkedin-logo"></img>
+                            </a>
+                        </div>
                     </div>
-                    <div class="shapes">
-                        <div class="pentagon left-shape"></div>
-                        <div class="star right-shape"></div>
-                        <div class="square left-shape"></div>
-                        <div class="circle right-shape"></div>
-                        <div class="triangle left-shape"></div>
+                    <div className="shapes">
+                        <div className="pentagon left-shape"></div>
+                        <div className="star right-shape"></div>
+                        <div className="square left-shape"></div>
+                        <div className="circle right-shape"></div>
+                        <div className="triangle left-shape"></div>
                     </div>
                 </div>
             </section>
             <section id="about-section">
-                <div class="content-container">
-                    <div class="shapes">
-                        <div class="pentagon left-shape"></div>
-                        <div class="star right-shape"></div>
-                        <div class="square left-shape"></div>
-                        <div class="circle right-shape"></div>
-                        <div class="triangle left-shape"></div>
+                <div className="content-container">
+                    <div className="shapes">
+                        <div className="pentagon left-shape"></div>
+                        <div className="star right-shape"></div>
+                        <div className="square left-shape"></div>
+                        <div className="circle right-shape"></div>
+                        <div className="triangle left-shape"></div>
                     </div>
-                    <div class="text-group">
+                    <div className="text-group">
                         <h2>About Me</h2>
                         <p> 
                             I’m extremely passionate about building products based around a user centered design approach, 
@@ -66,19 +85,19 @@ export default function Home() {
                 
             </section>
 
-            <section id="stack-section" class="last-section">
-                <div class="content-container">
+            <section id="stack-section" className="last-section">
+                <div className="content-container">
                     <h2>My Stack</h2>
                     <div id="stacks-container">
-                        <div class="stack stackOdd" id="frontend-container">
-                            <div class="shape-container">
+                        <div className="stack stackOdd" id="frontend-container">
+                            <div className="shape-container">
                                 <h3>FRONTEND</h3>
-                                <div class="star"></div>
+                                <div className="star"></div>
                                 
                             </div>
-                            <div class="stack-main-content">
+                            <div className="stack-main-content">
                                 
-                                <div class="stack-list">
+                                <div className="stack-list">
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["html5-logo.png"]} alt="html5-logo" className="stack-logo"/>
                                         <p className="logo-text">HTML5</p>
@@ -111,9 +130,9 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div class="stack stackEven" id="backend-container">
-                            <div class="stack-main-content">
-                                <div class="stack-list">
+                        <div className="stack stackEven" id="backend-container">
+                            <div className="stack-main-content">
+                                <div className="stack-list">
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["flask-logo.png"]} alt="flask-logo" className="stack-logo"/>
                                         <p className="logo-text">Flask</p>
@@ -124,20 +143,20 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="shape-container">
+                            <div className="shape-container">
                                 <h3>BACKEND</h3>
-                                <div class="circle"></div>
+                                <div className="circle"></div>
                             </div>
                         </div>
 
-                        <div class="stack stackOdd" id="database-container">
-                            <div class="shape-container">
+                        <div className="stack stackOdd" id="database-container">
+                            <div className="shape-container">
                                 <h3>DATABASE</h3>
-                                <div class="triangle"></div>
+                                <div className="triangle"></div>
                             </div>
-                            <div class="stack-main-content">
+                            <div className="stack-main-content">
                                 
-                                <div class="stack-list">
+                                <div className="stack-list">
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["mysql-logo.png"]} alt="mySQL-logo" className="stack-logo"/>
                                         <p className="logo-text">MySQL</p>
@@ -158,9 +177,9 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div class="stack stackEven" id="tools-container">
-                            <div class="stack-main-content">
-                                <div class="stack-list">
+                        <div className="stack stackEven" id="tools-container">
+                            <div className="stack-main-content">
+                                <div className="stack-list">
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["git-logo.png"]} alt="git-logo" className="stack-logo"/>
                                         <p className="logo-text">Git</p>
@@ -183,18 +202,18 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="shape-container">
+                            <div className="shape-container">
                                 <h3>TOOLS</h3>
-                                <div class="square"></div>
+                                <div className="square"></div>
                             </div>
                         </div>
-                        <div class="stack stackOdd" id="design-container">
-                            <div class="shape-container">
+                        <div className="stack stackOdd" id="design-container">
+                            <div className="shape-container">
                                 <h3> + DESIGN</h3>
-                                <div class="pentagon"></div>
+                                <div className="pentagon"></div>
                             </div>
-                            <div class="stack-main-content">
-                                <div class="stack-list">
+                            <div className="stack-main-content">
+                                <div className="stack-list">
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["design/photoshop-logo.png"]} alt="photoshop-logo" className="stack-logo"/>
                                         <p className="logo-text">Photoshop</p>

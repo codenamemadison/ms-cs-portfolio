@@ -46,6 +46,41 @@ section {
     align-items: center; */
 }
 
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1vh;
+    margin-left: -1vw;
+}
+
+.socials-container img {     
+  height: auto;        
+  margin: 0 8px;     
+  transition: opacity 0.3s ease;
+}
+
+#github-logo {
+    width: 38px;
+
+}
+
+#linkedin-logo {
+    width: 33px;    
+    margin-top: 2px;
+
+}
+
+/* .socials-container img:hover {
+  opacity: 0.7;       
+} */
+
+.social-link:hover {
+    opacity: 0.7;
+    filter: brightness(0.5) sepia(1) hue-rotate(180deg);
+}
 
 /******* SHAPES *******/
 .shapes {
