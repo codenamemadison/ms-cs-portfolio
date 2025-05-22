@@ -2,7 +2,7 @@
 
 const ProjectsData = [
     {
-        projectName: "Recipe App",
+        projectName: "Recipe App (In Progress)",
         techStack: "React, Node.js, Tailwind CSS (Planned), Firebase, Cloudinary, Git, GitHub",
         projectType: "Solo",
         description: [
