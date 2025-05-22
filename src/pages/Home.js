@@ -1,40 +1,14 @@
 import React from 'react';
 import '../css/Home.css'
 
-import html5Logo from '../assets/logos/html5-logo.png';
-import css3Logo from '../assets/logos/css3-logo.png';
-import reactLogo from '../assets/logos/react-react-native-logo.png';
-import reduxLogo from '../assets/logos/redux-logo.png';
-import jsLogo from '../assets/logos/JavaScript-logo.png';
-import expoLogo from '../assets/logos/expo-square-logo.png';
+import { importAll } from '../utils/importAllImages';
 
-import flaskLogo from '../assets/logos/flask-logo.png';
-import sqlLogo from '../assets/logos/sql-logo.png';
-
-import mySQLLogo from '../assets/logos/mysql-logo.png';
-import awsDynamoDBLogo from '../assets/logos/dynamodb-logo.png';
-import mongoDBLogo from '../assets/logos/mongodb-logo.svg';
-import firebaseLogo from '../assets/logos/firebase-logo.png';
-
-import gitLogo from '../assets/logos/git-logo.png';
-import xcodeLogo from '../assets/logos/xcode-logo.png';
-import npmLogo from '../assets/logos/npm-logo.png';
-import godotLogo from '../assets/logos/godot-logo.png';
-import jupyterNotebookLogo from '../assets/logos/jupyter-logo.png';
-
-import photoshopLogo from '../assets/logos/design/photoshop-logo.png';
-import lightroomLogo from '../assets/logos/design/lightroom-logo.png';
-import illustratorLogo from '../assets/logos/design/illustrator-logo.png';
-import indesignLogo from '../assets/logos/design/indesign-logo.png';
-import premiereProLogo from '../assets/logos/design/premiere-pro-logo.png';
-import afterEffectsLogo from '../assets/logos/design/after-effects-logo.png';
-import figmaLogo from '../assets/logos/design/figma-logo-circle.png';
-import protoIoLogo from '../assets/logos/design/proto-io-logo.png';
-import canvaLogo from '../assets/logos/design/canva-logo.png';
-import zbrushLogo from '../assets/logos/design/zbrush-logo.png';
-import touchDesignerLogo from '../assets/logos/design/touchdesigner-logo.png';
 
 export default function Home() {
+    const imagesImported = importAll(
+        require.context('../assets/logos/', true, /\.(png|jpe?g|svg)$/)
+    );
+    console.log("Available images:", Object.keys(imagesImported));
     return (
         <div id="home-bg">
             <section id="main-section">
@@ -91,6 +65,7 @@ export default function Home() {
                 </div>
                 
             </section>
+
             <section id="stack-section" class="last-section">
                 <div class="content-container">
                     <h2>My Stack</h2>
@@ -105,31 +80,31 @@ export default function Home() {
                                 
                                 <div class="stack-list">
                                     <div className="logo-and-text-container">
-                                        <img src={html5Logo} alt="html5-logo" className="stack-logo"/>
+                                        <img src={imagesImported["html5-logo.png"]} alt="html5-logo" className="stack-logo"/>
                                         <p className="logo-text">HTML5</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={css3Logo} alt="css3-logo" className="stack-logo"/>
+                                        <img src={imagesImported["css3-logo.png"]} alt="css3-logo" className="stack-logo"/>
                                         <p className="logo-text">CSS3</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={reactLogo} alt="react-logo" className="stack-logo"/>
+                                        <img src={imagesImported["react-react-native-logo.png"]} alt="react-logo" className="stack-logo"/>
                                         <p className="logo-text">React</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={reactLogo} alt="react-native-logo" className="stack-logo"/>
+                                        <img src={imagesImported["react-react-native-logo.png"]} alt="react-native-logo" className="stack-logo"/>
                                         <p className="logo-text">React Native</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={reduxLogo} alt="redux-logo" className="stack-logo"/>
+                                        <img src={imagesImported["redux-logo.png"]} alt="redux-logo" className="stack-logo"/>
                                         <p className="logo-text">Redux</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={jsLogo} alt="javascript-logo" className="stack-logo"/>
+                                        <img src={imagesImported["JavaScript-logo.png"]} alt="javascript-logo" className="stack-logo"/>
                                         <p className="logo-text">JavaScript</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={expoLogo} alt="expo-logo" className="stack-logo"/>
+                                        <img src={imagesImported["expo-square-logo.png"]} alt="expo-logo" className="stack-logo"/>
                                         <p className="logo-text">Expo</p>
                                     </div>
                                 </div>
@@ -140,11 +115,11 @@ export default function Home() {
                             <div class="stack-main-content">
                                 <div class="stack-list">
                                     <div className="logo-and-text-container">
-                                        <img src={flaskLogo} alt="flask-logo" className="stack-logo"/>
+                                        <img src={imagesImported["flask-logo.png"]} alt="flask-logo" className="stack-logo"/>
                                         <p className="logo-text">Flask</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={sqlLogo} alt="sql-logo" className="stack-logo"/>
+                                        <img src={imagesImported["sql-logo.png"]} alt="sql-logo" className="stack-logo"/>
                                         <p className="logo-text">SQL</p>
                                     </div>
                                 </div>
@@ -164,19 +139,19 @@ export default function Home() {
                                 
                                 <div class="stack-list">
                                     <div className="logo-and-text-container">
-                                        <img src={mySQLLogo} alt="mySQL-logo" className="stack-logo"/>
+                                        <img src={imagesImported["mysql-logo.png"]} alt="mySQL-logo" className="stack-logo"/>
                                         <p className="logo-text">MySQL</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={awsDynamoDBLogo} alt="aws-dynamodb-logo" className="stack-logo"/>
+                                        <img src={imagesImported["dynamodb-logo.png"]} alt="aws-dynamodb-logo" className="stack-logo"/>
                                         <p className="logo-text">AWS DynamoDB</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={mongoDBLogo} alt="mongodb-logo" className="stack-logo"/>
+                                        <img src={imagesImported["mongodb-logo.svg"]} alt="mongodb-logo" className="stack-logo"/>
                                         <p className="logo-text">MongoDB</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={firebaseLogo} alt="firebase-logo" className="stack-logo"/>
+                                        <img src={imagesImported["firebase-logo.png"]} alt="firebase-logo" className="stack-logo"/>
                                         <p className="logo-text">Firebase</p>
                                     </div>
                                 </div>
@@ -187,23 +162,23 @@ export default function Home() {
                             <div class="stack-main-content">
                                 <div class="stack-list">
                                     <div className="logo-and-text-container">
-                                        <img src={gitLogo} alt="git-logo" className="stack-logo"/>
+                                        <img src={imagesImported["git-logo.png"]} alt="git-logo" className="stack-logo"/>
                                         <p className="logo-text">Git</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={xcodeLogo} alt="xcode-logo" className="stack-logo"/>
+                                        <img src={imagesImported["xcode-logo.png"]} alt="xcode-logo" className="stack-logo"/>
                                         <p className="logo-text">XCode</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={npmLogo} alt="npm-logo" className="stack-logo"/>
+                                        <img src={imagesImported["npm-logo.png"]} alt="npm-logo" className="stack-logo"/>
                                         <p className="logo-text">NPM</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={godotLogo} alt="godot-logo" className="stack-logo"/>
+                                        <img src={imagesImported["godot-logo.png"]} alt="godot-logo" className="stack-logo"/>
                                         <p className="logo-text">Godot</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={jupyterNotebookLogo} alt="jupyter-notebook-logo" className="stack-logo"/>
+                                        <img src={imagesImported["jupyter-logo.png"]} alt="jupyter-notebook-logo" className="stack-logo"/>
                                         <p className="logo-text">Jupyter Notebook</p>
                                     </div>
                                 </div>
@@ -219,50 +194,49 @@ export default function Home() {
                                 <div class="pentagon"></div>
                             </div>
                             <div class="stack-main-content">
-                                
                                 <div class="stack-list">
                                     <div className="logo-and-text-container">
-                                        <img src={photoshopLogo} alt="photoshop-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/photoshop-logo.png"]} alt="photoshop-logo" className="stack-logo"/>
                                         <p className="logo-text">Photoshop</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={lightroomLogo} alt="lightroom-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/lightroom-logo.png"]} alt="lightroom-logo" className="stack-logo"/>
                                         <p className="logo-text">Lightroom</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={illustratorLogo} alt="illustrator-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/illustrator-logo.png"]} alt="illustrator-logo" className="stack-logo"/>
                                         <p className="logo-text">Illustrator</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={indesignLogo} alt="indesign-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/indesign-logo.png"]} alt="indesign-logo" className="stack-logo"/>
                                         <p className="logo-text">InDesign</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={premiereProLogo} alt="premiere-pro-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/premiere-pro-logo.png"]} alt="premiere-pro-logo" className="stack-logo"/>
                                         <p className="logo-text">Premiere Pro</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={afterEffectsLogo} alt="after-effects-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/after-effects-logo.png"]} alt="after-effects-logo" className="stack-logo"/>
                                         <p className="logo-text">After Effects</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={figmaLogo} alt="figma-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/figma-logo-circle.png"]} alt="figma-logo" className="stack-logo"/>
                                         <p className="logo-text">Figma</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={protoIoLogo} alt="proto-io-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/proto-io-logo.png"]} alt="proto-io-logo" className="stack-logo"/>
                                         <p className="logo-text">Proto.io</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={canvaLogo} alt="canva-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/canva-logo.png"]} alt="canva-logo" className="stack-logo"/>
                                         <p className="logo-text">Canva</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={zbrushLogo} alt="zbrush-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/zbrush-logo.png"]} alt="zbrush-logo" className="stack-logo"/>
                                         <p className="logo-text">Zbrush</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={touchDesignerLogo} alt="touchdesigner-logo" className="stack-logo"/>
+                                        <img src={imagesImported["design/touchdesigner-logo.png"]} alt="touchdesigner-logo" className="stack-logo"/>
                                         <p className="logo-text">TouchDesigner</p>
                                     </div>
                                 </div>

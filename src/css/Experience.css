@@ -16,7 +16,8 @@
 body {
     background-color: var(--color-main);
 }
-h1 {
+
+#experience-bg h1 {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -61,37 +62,37 @@ h1 {
     opacity: 0.75;
 }
 
-.shape {
+#experience-bg .shape {
     z-index: 11;
     scale: 75%;
 }
 
-.pentagon {
+#experience-bg .pentagon {
     transform: rotate(-20deg);
     margin-top: 0vh;
     margin-left: 0vh;
 }
 
 
-.star {
+#experience-bg .star {
     transform: rotate(15deg);
     margin-top: 0vh;
     margin-left: 0vh;
 }
 
-.square {
+#experience-bg .square {
     transform: rotate(-25deg);
     margin-top: 5vh;
     margin-left:0vh;
 }
 
-.circle {
+#experience-bg .circle {
     transform: rotate(0deg);
     margin-top: 0vh;
     margin-left: 0vh;
 }
 
-.triangle {
+#experience-bg .triangle {
     transform: rotate(20deg);
     margin-top: 0vh;
     margin-left: 0vh;
@@ -108,7 +109,7 @@ h1 {
 .experience-item h3 {
     font-weight: 400;
     font-size: 1.5em;
-    color: rgb(185, 178, 226);
+    color: var(--color-off-white);
 }
 
 .experience-item h2 {
@@ -138,5 +139,5 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: 1.1em;
-    color: rgb(185, 178, 226);
+    color: var(--color-off-white);
 }

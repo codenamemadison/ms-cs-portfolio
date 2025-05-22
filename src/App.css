@@ -13,6 +13,7 @@ html, body {
 :root {
   --color-main: #1E1436;
   --color-off-main: #533d6c;
+  --color-off-white: rgb(185, 178, 226);
   --color-main-blue: #6696FF;
   --color-main-yellow: #FFC03A;
   --color-main-red: #DB0000;
