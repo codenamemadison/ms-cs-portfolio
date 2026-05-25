@@ -71,7 +71,7 @@ export default function Home() {
                         </p>
                         <p> In addition to this, I have worked as a Software Engineer at <a href="https://www.hybrd.com" target="_blank" rel="noopener noreferrer">HYBRD</a> – a Y-Combinator 
                             graduate start-up that builds tools for athletes by athletes – where I specifically helped work
-                            on their upcoming desktop version of their workout calendar application.
+                            on their upcoming desktop version of their workout calendar application during my internship.
                             
                         </p>
                         <p>

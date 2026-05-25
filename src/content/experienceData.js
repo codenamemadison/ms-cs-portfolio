@@ -1,22 +1,47 @@
 
 const experienceData = [
     {
+        company: "HYBRD",
+        role: "Software Engineer (Front-End Intern)",
+        productLink: "https://www.hybrd.com",
+        techStack: "React, TypeScript, Zustand, Figma, Cursor, Figma MCP, Git/GitHub, JSON schemas",
+        startDate: "September 2025",
+        endDate: "March 2026",
+        description: [
+            "Led a major refactor of HYBRD’s desktop workout calendar feature, simplifying component architecture by converting " +
+            "components into presentational units and lifting logic and state management to parent components.",
+            "Designed and implemented a centralized Zustand store with selectors to handle calendar state and user interactions.",
+            "Rebuilt and styled UI components to match given Figma designs with high design fidelity and consistency.",
+            "Integrated UI with mock data and defined JSON schema to validate frontend flows and for future API development.",
+            "Developed the front-end of a desktop version of an existing AI-powered logging feature that allows users to input " +
+            "workout descriptions, with an LLM automatically parsing exercises and generating structured workout entries.",
+            "Built the front-end streaming experience for real-time AI responses, implementing stream handling and transport to " +
+            "progressively render model output in the UI.",
+        ]
+    },
+    {
         company: "IoT Nation",
         role: "Frontend Engineer & UX/UI Designer",
+        techStack: "React Native, Redux, Xcode, Expo, TestFlight, Webflow, Figma, Amazon DynamoDB, Python, Git/GitHub",
+        productLink: "https://apps.apple.com/us/app/fundingwire/id6444233469",
         startDate: "July 2024",
-        endDate: "Present",
+        endDate: "Feb 2026",
         description: [
-            "Lead the deployment of new versions of a React Native-based app to the Apple App Store biweekly. Learn to work in a startup environment and adapt to continuously changing needs and user concerns. ",
-            "Redesign 20+ UI components and 10+ screens to enhance user flow efficiency and user satisfaction. ",
-            "Implement functionality related (but not limited) to search, account management, user collections, and user onboarding.",
-            "Gain feedback from potential users by conducting generative user interviews and usability testing to identify pain points of the app and help make informed decisions about features and visuals.",
-            "Familiarize with process of launching an app to the Apple App Store, including becoming knowledgeable of Apple’s App Review Guidelines and Human Interface Guidelines. Designed and created engaging assets to prepare for app launch, including promotional screenshots, marketing graphics, and an app landing page. ",
-            "Write and test Elasticsearch queries to interface with backend systems to support the development of new features and ensure real-time data access through RESTful endpoints."
+            "Managed end-to-end App Store deployment for a React Native app, ensuring compliance with Apple guidelines",
+            "Redesign 20+ UI components and 10+ screens using Figma with the aim of improving user flow and satisfaction",
+            "Translate high-fidelity designs into production-ready UI using hooks, state management, and modular architecture",
+            "Develop and maintain key frontend features (i.e. search, data filtering, user onboarding, user collections, and account management), ensuring smooth integration with RESTful APIs and Elasticsearch to enable real-time data access",
+            "Conduct user interviews and usability testing to uncover insights to shape UI improvements and feature decisions",
+            "Automate a workflow for generating graphics from data using Python scripting and a headless browser setup"
         ]
+    },
+    {
+        graduateDivider: true,
     },
     {
         company: "New York University – Office of Global Inclusion",
         role: "Graphic Designer",
+        techStack: "Adobe Creative Cloud (Photoshop, Illustrator, Lightroom), Canva",
         startDate: "November 2022",
         endDate: "August 2023",
         description: [
@@ -28,6 +53,7 @@ const experienceData = [
     {
         company: "NYC Department of Youth and Community Development",
         role: "Design Intern",
+        techStack: "Adobe Creative Cloud (Photoshop, Illustrator, Lightroom), Canva",
         startDate: "July 2022",
         endDate: "August 2022",
         description: [
@@ -39,6 +65,7 @@ const experienceData = [
     {
         company: "Morgan Stanley",
         role: "Technology & UX/UI Intern",
+        techStack: "Figma, HTML/CSS, JavaScript, Git/GitHub",
         startDate: "July 2021",
         endDate: "August 2021",
         description: [
