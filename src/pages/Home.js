@@ -20,7 +20,8 @@ export default function Home() {
                         <h1> Hi, my name is Madison Shimbo </h1>
                         <p> 
                             I’m a Front-end Engineer, UX/UI Designer, and multi-medium artist.
-                            I have almost 3 years of experience in Software Engineering and specialize in frontend engineering. 
+                            <br></br>
+                            I have about 3 years of experience in Software Engineering and specialize in frontend engineering. 
                         </p>
                         <div className="socials-container">
                             <a 
@@ -69,8 +70,8 @@ export default function Home() {
                             years at a start-up called IoT Nation, in which I helped design, work on, and release an iOS app to the app store 
                             called <a href="https://apps.apple.com/us/app/fundingwire/id6444233469" target="_blank" rel="noopener noreferrer">FundingWire</a>. 
                         </p>
-                        <p> In addition to this, I have worked as a Software Engineer at <a href="https://www.hybrd.com" target="_blank" rel="noopener noreferrer">HYBRD</a> – a Y-Combinator 
-                            graduate start-up that builds tools for athletes by athletes – where I specifically helped work
+                        <p> In addition to this, I have worked as a Software Engineer at <a href="https://www.hybrd.com" target="_blank" rel="noopener noreferrer">HYBRD</a> – a <a href="https://www.ycombinator.com/companies/hybrd" target="_blank" rel="noopener noreferrer">Y{'\u2011'}Combinator 
+                            graduate start-up that builds tools for athletes by athletes</a> – where I specifically helped work
                             on their upcoming desktop version of their workout calendar application during my internship.
                             
                         </p>
