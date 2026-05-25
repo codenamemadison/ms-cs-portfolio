@@ -22,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/contact-confirmation" element={<ContactConfirmation/>}/>
+        // TODO: Create UI section for Iot Nation & HYBRD work
       </Routes>
     </Router>
     </>
