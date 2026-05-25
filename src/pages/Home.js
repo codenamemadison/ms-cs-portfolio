@@ -19,8 +19,8 @@ export default function Home() {
                     <div className="text-group">
                         <h1> Hi, my name is Madison Shimbo </h1>
                         <p> 
-                            I’m a Front-end Engineer, UX/UI Designer, and an artist.
-                            I have 2 years of experience in Software Engineering and specialize in mobile engineering. 
+                            I’m a Front-end Engineer, UX/UI Designer, and multi-medium artist.
+                            I have almost 3 years of experience in Software Engineering and specialize in frontend engineering. 
                         </p>
                         <div className="socials-container">
                             <a 
@@ -64,9 +64,15 @@ export default function Home() {
                             ensuring that the work I do affects real people with real needs in a fresh and new way. 
                         </p>
                         <p>
-                            I have worked as a Front-end Engineer & UX/UI Designer within mobile development for the past two 
-                            years at a start-up, in which I helped design, work on, and release an iOS app to the app store 
-                            called FundingWire.
+                            After graduating with a B.S. in Computer Science in 2023, I have worked as a Front-End Engineer & UX/UI Designer 
+                            within mobile development for the first two 
+                            years at a start-up called IoT Nation, in which I helped design, work on, and release an iOS app to the app store 
+                            called <a href="https://apps.apple.com/us/app/fundingwire/id6444233469" target="_blank" rel="noopener noreferrer">FundingWire</a>. 
+                        </p>
+                        <p> In addition to this, I have worked as a Software Engineer at <a href="https://www.hybrd.com" target="_blank" rel="noopener noreferrer">HYBRD</a> – a Y-Combinator 
+                            graduate start-up that builds tools for athletes by athletes – where I specifically helped work
+                            on their upcoming desktop version of their workout calendar application.
+                            
                         </p>
                         <p>
                             Within tech, I have experience with web development, mobile engineering, game engineering, and 
@@ -83,6 +89,27 @@ export default function Home() {
                     </div>
                 </div>
                 
+            </section>
+            <section id="general-skills-section">
+                <div className="content-container">
+                    <h2>My Expertises</h2>
+                    <div id="expertise-container">
+                        <p>Frontend Engineering</p>
+                        <p>Mobile Design</p>
+                        <p>SLDC (Software Development Life Cycle)</p>
+                        <p>Agile Methodologies</p>
+                        <p>RESTful APIs</p>
+                        <p>Prototyping</p>
+                        <p>Wireframing</p>
+                        <p>User Interviewing</p>
+                        <p>User Interface Design</p>
+                        <p>Responsive Design</p>
+                        <p>AI Prompt Engineering</p>
+                        <p>AI-Assisted Development</p>
+                        <p>Graphic Design</p>
+                        <p>Social Media</p>
+                    </div>
+                </div>
             </section>
 
             <section id="stack-section" className="last-section">
@@ -107,6 +134,10 @@ export default function Home() {
                                         <p className="logo-text">CSS3</p>
                                     </div>
                                     <div className="logo-and-text-container">
+                                        <img src={imagesImported["JavaScript-logo.png"]} alt="javascript-logo" className="stack-logo"/>
+                                        <p className="logo-text">JavaScript</p>
+                                    </div>
+                                    <div className="logo-and-text-container">
                                         <img src={imagesImported["react-react-native-logo.png"]} alt="react-logo" className="stack-logo"/>
                                         <p className="logo-text">React</p>
                                     </div>
@@ -119,8 +150,8 @@ export default function Home() {
                                         <p className="logo-text">Redux</p>
                                     </div>
                                     <div className="logo-and-text-container">
-                                        <img src={imagesImported["JavaScript-logo.png"]} alt="javascript-logo" className="stack-logo"/>
-                                        <p className="logo-text">JavaScript</p>
+                                        <img src={imagesImported["zustand-logo-head.png"]} alt="zustand-logo" className="stack-logo"/>
+                                        <p className="logo-text">Zustand</p>
                                     </div>
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["expo-square-logo.png"]} alt="expo-logo" className="stack-logo"/>
@@ -187,6 +218,10 @@ export default function Home() {
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["xcode-logo.png"]} alt="xcode-logo" className="stack-logo"/>
                                         <p className="logo-text">XCode</p>
+                                    </div>
+                                    <div className="logo-and-text-container">
+                                        <img src={imagesImported["cursor-logo.png"]} alt="cursor-logo" className="stack-logo"/>
+                                        <p className="logo-text">Cursor</p>
                                     </div>
                                     <div className="logo-and-text-container">
                                         <img src={imagesImported["npm-logo.png"]} alt="npm-logo" className="stack-logo"/>
